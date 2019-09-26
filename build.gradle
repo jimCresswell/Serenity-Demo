@@ -6,17 +6,34 @@
  * User Manual available at https://docs.gradle.org/5.6.2/userguide/tutorial_java_projects.html
  */
 
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.69")
+    }
+}
+
 plugins {
     // Apply the java plugin to add support for Java
     id 'java'
 
     // Apply the application plugin to add support for building a CLI application
     id 'application'
+
+    // Support for IDEA project generation
+    id 'idea'
 }
+
+// Serenity sepcific
+apply plugin: 'net.serenity-bdd.aggregator'
 
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
+    mavenLocal()
     jcenter()
 }
 
@@ -24,11 +41,30 @@ dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:28.0-jre'
 
-    // Use JUnit test framework
+    // Test dependencies
     testImplementation 'junit:junit:4.12'
+    testImplementation 'net.serenity-bdd:serenity-core:2.0.69'
+    testImplementation 'net.serenity-bdd:serenity-junit:2.0.69'
+    testImplementation 'net.serenity-bdd:serenity-cucumber:1.9.39'
+    testImplementation 'org.assertj:assertj-core:3.8.0'
 }
 
 application {
     // Define the main class for the application
     mainClassName = 'serenity_demo.App'
 }
+
+// Standard Serenity Gradle config, investigate.
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
+// Don't stop on test failure, so that the Serenity report generation still happens
+gradle.startParameter.continueOnFailure = true
+// Make sure the 'aggregate' tasks runs after the tests so the Serenity test report is generated
+test.finalizedBy(aggregate)
+
+// Make sure the bytcode runs on older JVMs
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
