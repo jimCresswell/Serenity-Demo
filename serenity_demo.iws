@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b237394-55d2-4f6b-bce4-5cf22b061fda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/navigation/NavigateToSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/navigation/SearchHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/search/SearchForSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/search/SearchFormPageElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/search/SearchResultSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/serenity_demo/utilities/matchers/TextMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/serenity_demo/SearchTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serenity_demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/serenity_demo.iws" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
