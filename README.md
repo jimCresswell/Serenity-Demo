@@ -2,7 +2,9 @@
 
 End-to-end type testing demo, using the JVM based Serenity-BDD framework with Cucumber, Webdriver and Gradle (Groovy DSL).
 
-The tests/checks (since we know what the outcomes should be they are checks) are driven from user-experience level specifications contained in ["feature files"](src/test/resources/features/search/search.feature) using [Cucumber](https://cucumber.io/)'s [Gherkin](https://cucumber.io/docs/gherkin/reference/) syntax.  
+The checks (we know what the outcomes should be so they are checks rather than tests) are driven from user-experience level specifications contained in ["feature files"](src/test/resources/features/search/search.feature) using [Cucumber](https://cucumber.io/)'s [Gherkin](https://cucumber.io/docs/gherkin/reference/) syntax.
+
+The checks evaluate a basic search operation against [DuckDuckGo](https://duckduckgo.com/).  
 
 ## Note on Webdriver Binaries
 
