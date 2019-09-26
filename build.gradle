@@ -8,7 +8,6 @@
 
 buildscript {
     repositories {
-        mavenLocal()
         jcenter()
     }
     dependencies {
@@ -27,13 +26,12 @@ plugins {
     id 'idea'
 }
 
-// Serenity sepcific
+// Serenity specific
 apply plugin: 'net.serenity-bdd.aggregator'
 
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    mavenLocal()
     jcenter()
 }
 
@@ -60,7 +58,8 @@ application {
     mainClassName = 'serenity_demo.App'
 }
 
-// Standard Serenity Gradle config, investigate.
+// Standard Serenity Gradle config.
+// TO DO: investigate.
 test {
     testLogging.showStandardStreams = true
     systemProperties System.getProperties()

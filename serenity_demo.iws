@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b237394-55d2-4f6b-bce4-5cf22b061fda" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/serenity_demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/serenity_demo.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serenity_demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/serenity_demo.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
