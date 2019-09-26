@@ -7,10 +7,10 @@ public class SearchForSteps extends UIInteractionSteps {
 
     @Step("Search for term {0}")
     public void term(String term) {
-        $(SearchFormPageElement.SEARCH_FIELD)
+        $(SearchFormPageElements.SEARCH_FIELD)
                 .waitUntilClickable()
                 .clear();
-        $(SearchFormPageElement.SEARCH_FIELD).type(term);
-        $(SearchFormPageElement.SEARCH_BUTTON).click();
+        $(SearchFormPageElements.SEARCH_FIELD).type(term);
+        $(SearchFormPageElements.SEARCH_BUTTON).click();
     }
 }

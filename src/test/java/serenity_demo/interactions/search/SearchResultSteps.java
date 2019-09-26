@@ -11,7 +11,7 @@ public class SearchResultSteps extends UIInteractionSteps {
 
     @Step("Get the search results")
     public List<String> getTitles() {
-        return findAll(ResultListPageElement.RESULT_TITLES)
+        return findAll(ResultListPageElements.RESULT_TITLES)
                 .stream()
                 .map(WebElementFacade::getTextContent)
                 .collect(Collectors.toList());
