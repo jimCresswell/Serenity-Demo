@@ -50,7 +50,8 @@ dependencies {
 }
 
 application {
-    // Define the main class for the application
+    // Define the main class for the application.
+    // TO DO: change this so the tests can be bundled to an executable JAR.
     mainClassName = 'serenity_demo.App'
 }
 
