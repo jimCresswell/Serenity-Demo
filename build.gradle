@@ -71,6 +71,6 @@ gradle.startParameter.continueOnFailure = true
 // Make sure the 'aggregate' tasks runs after the tests so the Serenity test report is generated
 test.finalizedBy(aggregate)
 
-// Make sure the bytcode runs on older JVMs
+// Make sure the bytecode runs on older JVMs
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
