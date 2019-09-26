@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b237394-55d2-4f6b-bce4-5cf22b061fda" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serenity_demo.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/serenity_demo.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serenity_demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/serenity_demo.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/serenity_demo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/serenity_demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,12 +88,13 @@
     <option name="STATE" value="0" />
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -164,12 +164,17 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
