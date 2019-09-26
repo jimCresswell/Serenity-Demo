@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b237394-55d2-4f6b-bce4-5cf22b061fda" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serenity_demo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/serenity_demo.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/serenity_demo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serenity_demo/SearchTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/SearchTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/navigation/NavigateToSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/interactions/navigation/NavigateToSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/navigation/SearchHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/interactions/navigation/SearchHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/search/ResultListPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/interactions/search/ResultListPageElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/search/SearchForSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/interactions/search/SearchForSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/search/SearchFormPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/interactions/search/SearchFormPageElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serenity_demo/interactions/search/SearchResultSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/interactions/search/SearchResultSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serenity_demo/step_definitions/SearchStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/step_definitions/SearchStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serenity_demo/utilities/matchers/TextMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/serenity_demo/utilities/matchers/TextMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/search/search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/search/search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/serenity.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/webdriver/linux/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webdriver/linux/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/webdriver/mac/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webdriver/mac/chromedriver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/webdriver/windows/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webdriver/windows/chromedriver.exe" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,6 +118,10 @@
     <property name="MemberChooser.sorted" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jimcr_000\Documents\code\serenity_demo\src\main\resources\features" />
+      <recent name="C:\Users\jimcr_000\Documents\code\serenity_demo\src\main\resources" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="serenity_demo.interactions.search" />
       <recent name="serenity_demo.interactions.navgitaion" />

@@ -29,6 +29,18 @@ plugins {
 // Serenity specific
 apply plugin: 'net.serenity-bdd.aggregator'
 
+// Tell Gradle that the test code is in the `main` module.
+sourceSets {
+    test {
+        java {
+            srcDirs += ['src/main/java']
+        }
+        resources {
+            srcDirs += ['src/main/resources']
+        }
+    }
+}
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
@@ -37,25 +49,21 @@ repositories {
 
 // TO DO: Update versions.
 dependencies {
-    // This dependency is used by the pretend application.
-    implementation 'com.google.guava:guava:28.0-jre'
-
     // Logging for Serenity
     implementation 'org.slf4j:slf4j-api:1.7.7'
     implementation 'ch.qos.logback:logback-classic:1.2.3'
 
     // Test dependencies
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'net.serenity-bdd:serenity-core:2.0.69'
-    testImplementation 'net.serenity-bdd:serenity-junit:2.0.69'
-    testImplementation 'net.serenity-bdd:serenity-cucumber:1.9.39'
-    testImplementation 'org.assertj:assertj-core:3.8.0'
+    implementation 'junit:junit:4.12'
+    implementation 'net.serenity-bdd:serenity-core:2.0.69'
+    implementation 'net.serenity-bdd:serenity-junit:2.0.69'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.39'
+    implementation 'org.assertj:assertj-core:3.8.0'
 }
 
 application {
     // Define the main class for the application.
-    // TO DO: change this so the tests can be bundled to an executable JAR.
-    mainClassName = 'serenity_demo.App'
+    mainClassName = 'serenity_demo.TestRunner'
 }
 
 // Standard Serenity Gradle config.
@@ -65,10 +73,12 @@ test {
     systemProperties System.getProperties()
 }
 
-// Don't stop on test failure, so that the Serenity report generation still happens
-gradle.startParameter.continueOnFailure = true
 // Make sure the 'aggregate' tasks runs after the tests so the Serenity test report is generated
 test.finalizedBy(aggregate)
+
+// Don't stop on test failure, so that the Serenity report generation still happens
+gradle.startParameter.continueOnFailure = true
+
 
 // Make sure the bytecode runs on older JVMs
 sourceCompatibility = 1.8
