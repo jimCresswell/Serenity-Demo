@@ -1,4 +1,4 @@
-Feature: Search by keyword
+Feature: Searching
 
   Scenario: Searching for a term
     Given I want to search for a term

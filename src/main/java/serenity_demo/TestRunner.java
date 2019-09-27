@@ -5,10 +5,22 @@
  */
 package serenity_demo;
 
+import net.thucydides.core.reports.html.HtmlAggregateStoryReporter;
 import org.junit.runner.JUnitCore;
 
+import java.io.File;
+import java.io.IOException;
+
 public class TestRunner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+        // Run the test suite.
         JUnitCore.runClasses(SearchTestSuite.class);
+
+        // Generate the aggregated test report.
+        File sourceDirectory = new File("target/site/serenity/");
+        HtmlAggregateStoryReporter reporter = new HtmlAggregateStoryReporter("Serenity Cucumber Demo");
+        reporter.setOutputDirectory(sourceDirectory);
+        reporter.generateReportsForTestResultsFrom(sourceDirectory);
     }
 }
